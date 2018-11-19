@@ -1,3 +1,7 @@
+* El primer paso antes de hacer cualquier cosa es obtener el proyecto del repositorio. Para ello ingresamos en la linea de comnados lo siguiente:
+
+git clone https://github.com/mbSaez/Practica-Matias.git
+
 Ingresar a XAMPP Control Panel e iniciar el servicio Apache y Mysql respecticavemnte.
 
 ## Conexion  con la BD
