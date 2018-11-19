@@ -6,8 +6,46 @@ Proyecto para **Practica Matias** con interfaz Web, desarrollado en PHP en compa
 - Laravel Framework 5.7.13
 - XAMPP Control Panel v3.2.2
 
+### Download Composer ###
+* Instalador en Windows.
+El instalador descargará Composer para usted y configurará su variable de entorno PATH para que pueda llamar composer desde cualquier directorio.
+
+En el sitio oficial de Composer descargue y ejecute [Composer-Setup.exe](https://getcomposer.org): Esto instalará la última versión del compositor cada vez que se ejecute.
+
+* Instalación por linea de comandos.
+En la linea de comandos ejecutar el siguiente script:
+```
+php -r "copy ('https://getcomposer.org/installer', 'composer-setup.php');" 
+
+php composer-setup.php 
+
+php -r "unlink ('composer-setup.php');"
+
+```
+*El script al ser ejecutado realiza lo siguiente:*
+
+- Descargar instalador en el directorio en el que estas situado.
+- Ejecutar el instalador composer.
+- Quitar el instalador.
+
+### Download Laravel ###
+Una buena alternativa para descargar Laravel es hacerlo con su propio instalador, el cual al ser un paquete podrá ser instalado globalmente con el siguiente comando:
+```
+composer global require "laravel/installer"
+
+```
+- Para MacOs y Linux se debe definir la variable PATH en:
+*~/.bashrc o ~/.bash_profile*
+
+Y la ruta que debe añadirse :
+*:$HOME/.composer/vendor/bin*
+
+- Para Windows, modificar la variable de entorno PATH para agregar esta ruta:
+*C:\Users\tu-usuario\AppData\Roaming\Composer\vendor\bin*
+
+
 ### Download project ###
-* El primer paso antes de hacer cualquier cosa es obtener el proyecto del repositorio. Para ello ingresamos en la linea de comnados lo siguiente:
+ El primer paso antes de hacer cualquier cosa es obtener el proyecto del repositorio. Para ello ingresamos en la linea de comandos lo siguiente:
 
 ```
  git clone https://github.com/mbSaez/Practica-Matias.git
@@ -24,7 +62,7 @@ Configuracion del *.env file.*
 - **DB_USERNAME**=*UserName*(root en la mayoría de los casos)
 - **DB_PASSWORD**=*UserRootPass*(Solo en caso de haber ocupado password en la conexión).
 
-Una vez que esta establecida la conexión con la base de datos, se realiza la migración de los datos con el siguiente comando:
+Una vez que está establecida la conexión con la base de datos, se realiza la migración de los datos con el siguiente comando:
 ```
  php artisan migrate 
 ```
@@ -55,8 +93,10 @@ Para hacer ingreso a través de XAMPP:
 
 Nos dirigimos a la parte de los servicios y en mysql damos click en "Admin". 
 
+### Referencias ###
 
-
+**https://getcomposer.org**
+**https://styde.net/instalacion-de-composer-y-laravel/**
  
  
 
