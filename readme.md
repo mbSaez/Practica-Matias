@@ -55,18 +55,7 @@ Para hacer ingreso a través de XAMPP:
 
 Nos dirigimos a la parte de los servicios y en mysql damos click en "Admin". 
 
-# Iniciar requisitos 
 
-Para poder visualizar el proyecto en el browser local debes ir a la terminal de comandos (estando en la misma carpeta del proyecto -> CrudResource) e ingresar el  siguiente comando: 
-
--> php artisan serve <- 
-
-Esto iniciara el servidor php arrojando el siguiente mensaje: "Laravel development server started: <http://127.0.0.1:8000>". 
-Una vez levantado el servidor solo bastara con escribir "localhost:8000" en el browser para visualizar la aplicación.  
-
-# Seguridad  
-
-Seguridad basada hasta el momento en auth, un componente propio de Laravel Framework 5.7.13(Autenticación). 
 
  
  
